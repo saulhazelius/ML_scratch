@@ -1,2 +1,2 @@
-# data_sci
-Here are included proyects related with data science, mostly focused on web scraping, and ML algorithms
+# Some ML algorithms
+linear regresssion, logistic regression and Naive Bayes classifier. Also it is included a neural network version of the logistic regression using PyTorch
