@@ -41,9 +41,6 @@ for sam in dp: # positive images
 	fp.append(im)
 
 fp = np.array(fp)
-fpm = np.min(fp)
-fp = (fp-fpm)/(np.max(fp)-fpm)
-
 
 fn = []
 for sam in dn: # negative images  
@@ -52,10 +49,8 @@ for sam in dn: # negative images
 	fn.append(im)
 
 fn = np.array(fn)
-fnm = np.min(fn)
-fn = (fn-fnm)/(np.max(fn)-fnm)
 
-hlistp,pairp= split(fp,v) # sfold huge list 
+hlistp,pairp= split(fp,v) # sfold huge list of 10 lists each of size 3 ( 30 pos samples / 10-fold = 3)
 hlistn,pairn= split(fn,v) # sfold huge list
 
 
